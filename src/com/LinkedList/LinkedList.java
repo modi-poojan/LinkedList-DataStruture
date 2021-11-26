@@ -1,14 +1,23 @@
 package com.LinkedList;
 
 public class LinkedList {
-	public static void main(String[] args) {
+	
+	Node head = null;
+
+	public void insertAtHead(int data) {
 		
-		Node node1 = new Node(56); 
-		Node node2 = new Node(30);
-		Node node3 = new Node(70); 
+		Node newNode = new Node(data);
+		newNode.next = head;
+		head = newNode;
+	}
+	
+	public void display() {
 		
-		node1.next = node2;
-		node2.next = node3;
+		Node currentNode = head;
+		while(currentNode != null) {
+			System.out.print(currentNode.data + " ->");
+			currentNode = currentNode.next;
+		}
 	}
 	
 	
