@@ -54,6 +54,18 @@ public class LinkedList {
 		return deleted;
 	}
 	
+	public void searchElement(int value) {
+		Node currentNode = head;
+		while(currentNode!= null) {
+			if (currentNode.data == value) {
+				System.out.println(value+" found in linked list");
+				break;
+			}
+			currentNode = currentNode.next;
+		}
+		//System.out.println(value+" NOT found in linked list");
+	}
+	
 	public void display() {
 		
 		Node currentNode = head;

@@ -9,10 +9,6 @@ public class Main_LinkedList {
 		call.addToList(30);
 		call.addToList(70);
 		call.display();
-		
-		int deleted= call.popLast();
-		System.out.println("\n\n"+deleted+" Element at last deleted");
-		System.out.println("\nLinked List after pop operation is\n ");
-		call.display();
+		call.searchElement(30);
 	}
 }
