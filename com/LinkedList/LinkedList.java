@@ -34,6 +34,12 @@ public class LinkedList {
 			currentNode.next = newNode;
 	}
 	
+	public int pop() {
+		int deleted = head.data;
+		head = head.next;
+		return deleted;
+	}
+	
 	public void display() {
 		
 		Node currentNode = head;
@@ -43,7 +49,5 @@ public class LinkedList {
 		}
 	}
 	
-	
-	
-	}
+}
 
