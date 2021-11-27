@@ -10,8 +10,8 @@ public class Main_LinkedList {
 		call.addToList(70);
 		call.display();
 		
-		int deleted= call.pop();
-		System.out.println("\n\n"+deleted+" Element at head deleted");
+		int deleted= call.popLast();
+		System.out.println("\n\n"+deleted+" Element at last deleted");
 		System.out.println("\nLinked List after pop operation is\n ");
 		call.display();
 	}
