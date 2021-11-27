@@ -3,7 +3,8 @@ package com.LinkedList;
 public class LinkedList {
 	
 	Node head = null;
-
+	Node tail = null;
+	
 	public void insertAtHead(int data) {
 		
 		Node newNode = new Node(data);
@@ -37,6 +38,19 @@ public class LinkedList {
 	public int pop() {
 		int deleted = head.data;
 		head = head.next;
+		return deleted;
+	}
+	
+	public int popLast() {
+		Node currentNode = head;
+		Node prevNode = head;
+		
+		while(currentNode.next != null) {
+			prevNode = currentNode;
+			currentNode = currentNode.next;			
+		}
+		int deleted = currentNode.data;
+		prevNode.next = tail;
 		return deleted;
 	}
 	
