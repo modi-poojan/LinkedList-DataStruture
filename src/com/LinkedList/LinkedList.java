@@ -22,6 +22,18 @@ public class LinkedList {
 		currentNode.next = newNode;
 	}
 	
+	public void inBetween(int before, int data) {
+		
+		Node currentNode = head;
+		Node newNode = new Node(data);
+		while(currentNode.data == before) {
+			
+			currentNode = currentNode.next;
+		}
+			newNode.next = currentNode.next;
+			currentNode.next = newNode;
+	}
+	
 	public void display() {
 		
 		Node currentNode = head;

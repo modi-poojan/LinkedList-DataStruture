@@ -6,8 +6,8 @@ public class Main_LinkedList {
 		
 		LinkedList call = new LinkedList();
 		call.insertAtHead(56);
-		call.addToList(30);
 		call.addToList(70);
+		call.inBetween(50,36);
 		
 		call.display();
 	}
