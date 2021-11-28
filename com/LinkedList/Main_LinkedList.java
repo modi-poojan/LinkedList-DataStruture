@@ -9,6 +9,7 @@ public class Main_LinkedList {
 		call.addToList(30);
 		call.addToList(70);
 		call.display();
-		call.searchElement(30);
+		call.inBetween(30, 40);
+		call.display();
 	}
 }
