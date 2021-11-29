@@ -9,7 +9,13 @@ public class Main_LinkedList {
 		call.addToList(30);
 		call.addToList(70);
 		call.display();
+		call.size();
 		call.inBetween(30, 40);
+		call.size();
 		call.display();
+		call.searchDelete(40);
+		call.display();
+		call.size();
+
 	}
 }
